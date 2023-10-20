@@ -1,0 +1,126 @@
+body {
+  background-color: aquamarine;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.chatroom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-room {
+  background-color: pink;
+  position: relative;
+  max-height: 500px;
+  height: 90%;
+}
+.message-room .messages {
+  max-height: 100%;
+  height: 100%;
+  width: 60%;
+  background-color: lightpink;
+  margin: auto auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  /* &::-webkit-scrollbar{
+      width: 5px;
+  } */
+}
+
+.rooms {
+  background-color: yellow;
+  box-shadow: 1px 2px 15px -10px black;
+  position: relative;
+}
+.rooms .conversation {
+  width: 95%;
+  height: 65px;
+  background-color: transparent;
+  margin: 5px auto;
+  border-radius: 15px;
+}
+.rooms .selected {
+  background-color: rgb(255, 255, 128);
+}
+.rooms .new-chat-btn {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  border: none;
+  box-shadow: 1px 2px 15px -5px;
+}
+
+.type-area {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.type-area #type {
+  border-radius: 20px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  height: 50px;
+  width: 450px;
+  border: none;
+  padding-left: 10px;
+}
+.type-area #type :focus {
+  outline-color: lightgray;
+}
+.type-area #type:focus {
+  outline-color: lightgray;
+}
+.type-area #send {
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.single-message {
+  width: 100%;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.bubble {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  outline: none;
+  max-width: 65%;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: pink;
+  color: white;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 25px;
+  padding: 10px;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+
+.mytext {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 50px;
+  margin-left: auto;
+  margin-right: 10px;
+}/*# sourceMappingURL=main.css.map */
